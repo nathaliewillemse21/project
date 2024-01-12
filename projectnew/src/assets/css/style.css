@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* From App */
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #11191e;
+}
+
+.navbar {
+  background-color: rgb(238, 168, 247);
+}
+
+/* Logo */
+img[alt='logo'] {
+  width: 5rem;
+  aspect-ratio: 1/1;
+}
+/* Landing page */npm 
+#view {
+  animation-name: text;
+  animation-duration: 5s;
+  animation-iteration-count: calc(1);
+}
+
+#view1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(242, 149, 244);
+  padding-bottom: 5px;
+}
+
+#view2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@keyframes text {
+  from {
+    margin-top: 400px;
+  }
+
+  to {
+    margin-top: 0px;
+  }
+}
+.animate {
+  font-family: 'Anton';
+  background-image: linear-gradient(
+    -225deg,
+    #e8c5ec 0%,
+    #900592 29%,
+    #e941ca 67%,
+    #e8c5ec 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+img {
+  width: 350px;
+  animation-name: text;
+  animation-duration: 4s;
+  animation-iteration-count: calc(1);
+}
+#one {
+  animation-timing-function: ease;
+}
+/* About */
+@media screen and (width < 700px) {
+  .about-content {
+    overflow-y: scroll;
+    height: 5rem;
+    scroll-snap-type: y mandatory;
+  }
+}
+.body-background {
+  box-shadow: 0 0 2rem 0 rgb(125, 121, 125);
+  backdrop-filter: blur(1rem);
+  border: 1px solid-transparent;
+  background-color: rgba(17, 14, 17, 0.5);
+}
